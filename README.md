@@ -14,6 +14,7 @@
   1. [Variables](#variables)
   1. [Hoisting](#hoisting)
   1. [Conditional Expressions & Equality](#conditional-expressions--equality)
+  1. [Higher Order Functions](#higher-order-functions)
   1. [Blocks](#blocks)
   1. [Comments](#comments)
   1. [Whitespace](#whitespace)
@@ -597,6 +598,41 @@
 
 **[⬆ back to top](#table-of-contents)**
 
+## Higher Order Functions
+
+Prefer [higher order functions](http://eloquentjavascript.net/05_higher_order.html) to manual iteration and traversal.
+
+  - Use `map` and `forEach` instead of a traditional `for` loop.
+
+    ```javascript
+    // bad
+    var collection = []
+
+    for (i = 0; i < data.length; i++) {
+      collection.push(data[i] + 1);
+    }
+
+    // good
+    var collection = data.map(function(number) {
+      return number + 1;
+    });
+    ```
+
+  - Use [lodash](http://lodash.com/) instead of writing your own higher order functions when appropriate.
+
+    ```javascript
+    // bad
+    function max(collection) {
+      // insert your own algorithm for finding the max
+    }
+
+    max([4, 2, 8, 6]) // => 8
+
+    // good
+    _.max([4, 2, 8, 6]) // => 8
+    ```
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Blocks
 
