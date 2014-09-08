@@ -1159,6 +1159,18 @@ Prefer [higher order functions](http://eloquentjavascript.net/05_higher_order.ht
 
 **[⬆ back to top](#table-of-contents)**
 
+## CSS
+
+  - As a rule, it is unwise to bind your CSS and your JS onto the same class in your HTML. This is because doing so means you can’t have (or remove) one without (removing) the other. It is much cleaner, much more transparent, and much more maintainable to bind your JS onto specific classes.
+  
+  - Typically, these are classes that are prepended with js-, for example:
+    ```
+    <input type="submit" class="btn js-btn" value="Follow">
+    ```
+
+  - This means that we can have an element elsewhere which can carry with style of .btn {}, but without the behaviour of .js-btn.
+
+**[⬆ back to top](#table-of-contents)**
 
 ## Accessors
 
