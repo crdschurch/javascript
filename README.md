@@ -22,6 +22,7 @@
   1. [Semicolons](#semicolons)
   1. [Type Casting & Coercion](#type-casting--coercion)
   1. [Naming Conventions](#naming-conventions)
+  1. [CSS](#css)
   1. [Accessors](#accessors)
   1. [Constructors](#constructors)
   1. [Events](#events)
